@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
 
-:root {
-    --side: 16;
-}
 
 *{
     padding: 0;
@@ -25,12 +22,10 @@ body {
 }
 
 .square-div{
-    height: calc(100vh / var(--side));
-    width: calc(100vh / var(--side));
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 252, 193);
     transition: all 0.1s;
 }
 
 .square-div:hover{
-    background-color: rgb(98, 23, 23);
+    background-color: rgb(184, 84, 84);
 }
