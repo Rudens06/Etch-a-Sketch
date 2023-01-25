@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    display: inline-block;
+    width: 100vh;
 }
 
 .box-container {
@@ -82,4 +82,25 @@ body {
 .popup button:hover {
     background-color: rgb(175, 166, 154);
     cursor: pointer;
+}
+
+/* ----------------- Edit Button -------------------- */
+
+.edit-btn {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    border: none;
+    background: rgb(156, 185, 86);
+    transform: scale(1);
+    transition: all 0.2s;
+    padding: 20px 40px;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.edit-btn:hover {
+    background: rgb(105, 126, 58);
+    transform: scale(1.1);
 }
