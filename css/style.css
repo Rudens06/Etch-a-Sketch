@@ -104,3 +104,19 @@ body {
     background: rgb(105, 126, 58);
     transform: scale(1.1);
 }
+
+/* ----------------- Color Select -------------------- */
+
+.color-pick-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute ;
+    text-align: center;
+    top: 60%;
+    left: 6%;
+}
+
+.color-label {
+    color:rgb(255, 252, 193);
+}
+
