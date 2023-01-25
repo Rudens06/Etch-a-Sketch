@@ -26,16 +26,24 @@ function makeGrid(side){
         div.setAttribute("id", `${i}`);
         div.style.height = `calc(100vh/${side})`
         div.style.width = `calc(100vh/${side})`
-        div.addEventListener("mouseover",function(){
-            this.classList.add("hovered");
+        div.addEventListener("mouseover", function(){
+            let RValue = generateRandom(255);
+            let GValue = generateRandom(255);
+            let BValue = generateRandom(255);
+            if (!this.getAttribute("style").includes("background-color")) {
+                this.style.backgroundColor = `rgb(${RValue}, ${GValue}, ${BValue})`;
+            }
         });
         container.appendChild(div);
     }
 }
 
+function generateRandom(number) {
+    return Math.floor(Math.random() * number + 1);
+}
+
 function updateGrid(side){
     let oldGridClass = document.getElementsByClassName("square-div");
-    console.log(oldGridClass.length);
     let length = oldGridClass.length;
     for (let i = 0; i<length; i++){
         let box = document.getElementById(i);
